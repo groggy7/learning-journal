@@ -45,6 +45,7 @@ header * {
 
 .hero-post {
     color: white;
+    text-decoration: none;
     background-image: url("./assets/article-hero.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@ header * {
 }
 
 .other-posts {
-    padding: 2em 1em 2em 1em;
+    padding: 2em;
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -116,4 +117,40 @@ footer * {
 footer p:first-of-type {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .other-posts {
+        padding: 2em 3em;
+    }
+
+    header, .hero-post {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .navbar {
+        gap: 1.5em;
+    }
+
+    .hero-post {
+        padding-top: 10em;
+        padding-bottom: 4em;
+    }
+
+    .hero-post * {
+        width: 60%;
+    }
+
+    .hero-post-date {
+        font-size: 1.1rem;
+    }
+
+    .hero-post-header {
+        font-size: 2.4rem;
+    }
+
+    .hero-post-desc {
+        font-size: 1.2rem;
+    }
 }
