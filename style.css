@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --p-color: #505050;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -89,6 +93,10 @@ header * {
     border-radius: 4px;
 }
 
+.para {
+    color: var(--p-color);
+}
+
 .blog-post {
     display: flex;
     flex-direction: column;
@@ -121,7 +129,7 @@ footer p:first-of-type {
 
 @media (max-width: 480px) {
     .other-posts {
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-content: center;
     }
 }
