@@ -159,6 +159,10 @@ footer p:first-of-type {
         font-size: 1rem;
     }
 
+    .navbar {
+        gap: 1.5em;
+    }
+
     .section-header {
         font-size: 1.4rem;
     }
