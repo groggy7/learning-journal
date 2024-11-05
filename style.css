@@ -74,10 +74,10 @@ header * {
 }
 
 .other-posts {
-    padding: 2em;
+    padding: 2em 1.5em;
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .other-posts a {
@@ -119,14 +119,17 @@ footer p:first-of-type {
     font-size: 1.1rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 480px) {
     .other-posts {
-        padding: 2em 3em;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        justify-content: center;
     }
+}
 
+@media (min-width: 768px) {
     header, .hero-post {
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .navbar {
